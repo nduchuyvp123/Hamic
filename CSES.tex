@@ -56,12 +56,15 @@
 
 \begin{document}
 \maketitle
+\tableofcontents
+\newpage
+
 \section{Two Knight}
 \indent \url{https://cses.fi/problemset/task/1072}
 
 Bài này có rất nhiều cách làm, dưới đây là 2 trong số đó
 \begin{quote}
-    \subsection{DP}
+    \subsection*{DP}
     Gọi số cách đặt 2 con mã thỏa mãn trên bàn cờ $n \times n$ là $dp[n]$
 
     Trường hợp cơ bản: $dp[1] = 0$
@@ -123,7 +126,7 @@ Bài này có rất nhiều cách làm, dưới đây là 2 trong số đó
         }
     \end{lstlisting}
 
-    \subsection{Math}
+    \subsection*{Math}
     2 quân mã có thể tấn công nhau thì nó phải ở trong hình chữ nhật $2 \times 3$ hoặc $3 \times 2$, mỗi hình chữ nhật như thế sẽ cho 2 cách đặt con mã có thể tấn công nhau. Nghĩa là có tất cả $2 \times ((n - 1)(n - 2) + (n - 2)(n - 1))$ cách
 
     Vậy :D để 2 con mã không tấn công nhau thì có $C^2_{n^2} - 2 \times ((n - 1)(n - 2) + (n - 2)(n - 1))$ cách
@@ -142,6 +145,7 @@ Bài này có rất nhiều cách làm, dưới đây là 2 trong số đó
         }
     \end{lstlisting}
 \end{quote}
+\newpage
 \section{Two Sets}
 \url{https://cses.fi/problemset/task/1092}
 
